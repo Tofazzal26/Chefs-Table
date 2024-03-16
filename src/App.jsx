@@ -1,6 +1,7 @@
 import Cooking from "./Components/Cooking/Cooking";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
+import OurRecipe from "./Components/OurRecipe/OurRecipe";
 import Recipes from "./Components/Recipes/Recipes";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <div>
           <Header />
           <Main />
+          <OurRecipe />
           <div className="grid grid-cols-1 lg:grid-cols-6 gap-6">
             <div className="col-span-4">
               <Recipes />
