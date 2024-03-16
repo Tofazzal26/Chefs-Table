@@ -8,6 +8,12 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 function App() {
   const [recipes, setRecipes] = useState([]);
+  const [cookings, setCookings] = useState([]);
+
+  const handleRemove = (id) => {
+    const isExisted = recipes.filter((idx) => idx.id !== id);
+    setRecipes(isExisted);
+  };
 
   const handleCook = (recipe) => {
     const newRecipe = [...recipes, recipe];
@@ -34,7 +40,7 @@ function App() {
                 <Recipes handleCook={handleCook} />
               </div>
               <div className="col-span-2">
-                <Cooking recipes={recipes} />
+                <Cooking handleRemove={handleRemove} recipes={recipes} />
               </div>
             </div>
           </div>

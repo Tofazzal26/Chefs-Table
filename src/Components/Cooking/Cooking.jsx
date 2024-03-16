@@ -1,4 +1,4 @@
-const Cooking = ({ recipes }) => {
+const Cooking = ({ recipes, handleRemove }) => {
   return (
     <div className="border-2 rounded-md">
       <h2 className="text-2xl font-semibold text-center mt-6">
@@ -27,7 +27,10 @@ const Cooking = ({ recipes }) => {
                   <td>{recipe.time} minutes</td>
                   <td>{recipe.Calories} Calories</td>
                   <td>
-                    <button className="py-2 px-4 bg-[#0be58a] text-[#150B2B] font-semibold hover:bg-[#f4bf2c] rounded-full">
+                    <button
+                      onClick={() => handleRemove(recipe.id)}
+                      className="py-2 px-4 bg-[#0be58a] text-[#150B2B] font-semibold hover:bg-[#f4bf2c] rounded-full"
+                    >
                       Preparing
                     </button>
                   </td>
