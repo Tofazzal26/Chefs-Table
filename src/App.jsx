@@ -7,7 +7,7 @@ function App() {
       <div className="lexEnd container mx-auto">
         <div>
           <Header />
-          {/* <Main /> */}
+          <Main />
         </div>
       </div>
     </>
