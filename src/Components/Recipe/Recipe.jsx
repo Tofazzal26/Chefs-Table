@@ -1,4 +1,4 @@
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleCook }) => {
   const { name, id, image, description, Ingredients, time, Calories } = recipe;
   return (
     <div>
@@ -72,7 +72,10 @@ const Recipe = ({ recipe }) => {
             </div>
           </div>
           <div className="card-actions justify-right">
-            <button className="text-sm lg:text-lg font-semibold bg-[#15d1aa] rounded-full px-6 hover:bg-[#008DDA] py-3 text-[#150B2B]">
+            <button
+              onClick={() => handleCook(recipe)}
+              className="text-sm lg:text-lg font-semibold bg-[#15d1aa] rounded-full px-6 hover:bg-[#008DDA] py-3 text-[#150B2B]"
+            >
               Want to Cook
             </button>
           </div>
