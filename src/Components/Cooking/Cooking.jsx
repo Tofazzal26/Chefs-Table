@@ -71,6 +71,15 @@ const Cooking = ({ recipes, handleRemove, handleCooking, cookings }) => {
               </tbody>
             </table>
           </div>
+          <div className="flex justify-center my-4 gap-10">
+            <h4 className="text-[#868686] text-[14px] font-semibold ">
+              Total Time = {cookings.reduce((a, p) => a + p.time, 0)} minutes
+            </h4>
+            <h4 className="text-[#868686] text-[14px] font-semibold ">
+              Total Calories = {cookings.reduce((a, p) => a + p.Calories, 0)}{" "}
+              calories
+            </h4>
+          </div>
         </div>
       </div>
     </div>
