@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Potato Fry (Aloo Fry)",
+    "id": 1,
+    "image": "../src/images/potato.jpg",
+    "description": "Potato fry is an indian side dish made with potatoes spices and herbs",
+    "Ingredients": [
+      "250g ground beef",
+      "140ml soy sauce",
+      "100g basil leaf",
+      "300g mushroom"
+    ],
+    "time": 40,
+    "Calories": 360
+  },
+  {
+    "name": "Chicken Fry Recipe",
+    "id": 2,
+    "image": "../src/images/chicken.jpg",
+    "description": "The chicken is marinated in the above spices for few hours",
+    "Ingredients": [
+      "450g ground beef",
+      "80ml soy sauce",
+      "210g basil leaf",
+      "320g mushroom"
+    ],
+    "time": 20,
+    "Calories": 220
+  },
+  {
+    "name": "Soy Sauce Pan-fried Noodles",
+    "id": 3,
+    "image": "../src/images/sauce.jpg",
+    "description": "Savory, spicy, and super addicting Soy Sauce Pan-fried Noodles",
+    "Ingredients": [
+      "430g ground beef",
+      "560ml soy sauce",
+      "130g basil leaf",
+      "600g mushroom"
+    ],
+    "time": 60,
+    "Calories": 420
+  },
+  {
+    "name": "The Best Vegetable Salad",
+    "id": 4,
+    "image": "../src/images/salad.jpg",
+    "description": "A refreshing vegetable salad using all different kinds of vegetables",
+    "Ingredients": [
+      "450g ground beef",
+      "220ml soy sauce",
+      "305g basil leaf",
+      "175g mushroom"
+    ],
+    "time": 50,
+    "Calories": 520
+  },
+  {
+    "name": "The Ultimate Smash Cheeseburger",
+    "id": 5,
+    "image": "../src/images/burger.jpg",
+    "description": "Same smash burger size, but twice the amount of crisp, browned crust.",
+    "Ingredients": [
+      "240g ground beef",
+      "122ml soy sauce",
+      "420g basil leaf",
+      "570g mushroom"
+    ],
+    "time": 15,
+    "Calories": 280
+  },
+  {
+    "name": "Neapolitan pizza",
+    "id": 6,
+    "image": "../src/images/pizza.jpg",
+    "description": "According to the rules proposed by the Associazione Verace Pizza Napoletana",
+    "Ingredients": [
+      "550g ground beef",
+      "721ml soy sauce",
+      "420g basil leaf",
+      "511g mushroom"
+    ],
+    "time": 45,
+    "Calories": 620
+  }
+]
