@@ -15,6 +15,11 @@ function App() {
     setRecipes(isExisted);
   };
 
+  const handleCooking = (cook) => {
+    const newCooking = [...cookings, cook];
+    setCookings(newCooking);
+  };
+
   const handleCook = (recipe) => {
     const newRecipe = [...recipes, recipe];
 
@@ -40,7 +45,12 @@ function App() {
                 <Recipes handleCook={handleCook} />
               </div>
               <div className="col-span-2">
-                <Cooking handleRemove={handleRemove} recipes={recipes} />
+                <Cooking
+                  cookings={cookings}
+                  handleRemove={handleRemove}
+                  handleCooking={handleCooking}
+                  recipes={recipes}
+                />
               </div>
             </div>
           </div>

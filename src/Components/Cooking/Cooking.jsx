@@ -1,4 +1,4 @@
-const Cooking = ({ recipes, handleRemove }) => {
+const Cooking = ({ recipes, handleRemove, handleCooking, cookings }) => {
   return (
     <div className="border-2 rounded-md">
       <h2 className="text-2xl font-semibold text-center mt-6">
@@ -28,7 +28,10 @@ const Cooking = ({ recipes, handleRemove }) => {
                   <td>{recipe.Calories} Calories</td>
                   <td>
                     <button
-                      onClick={() => handleRemove(recipe.id)}
+                      onClick={() => {
+                        handleRemove(recipe.id);
+                        handleCooking(recipe);
+                      }}
                       className="py-2 px-4 bg-[#0be58a] text-[#150B2B] font-semibold hover:bg-[#f4bf2c] rounded-full"
                     >
                       Preparing
@@ -41,7 +44,7 @@ const Cooking = ({ recipes, handleRemove }) => {
         </div>
         <div>
           <h2 className="text-2xl font-semibold text-center mt-4 mb-4">
-            Currently cooking: 02
+            Currently cooking: {cookings.length}
           </h2>
           <div className="overflow-x-auto">
             <table className="table text-[#878787]">
@@ -57,12 +60,14 @@ const Cooking = ({ recipes, handleRemove }) => {
               <tbody>
                 {/* row 1 */}
 
-                <tr className="text-[14px] bg-[#f8f8f8]">
-                  <th></th>
-                  <td>hello</td>
-                  <td> minutes</td>
-                  <td> Calories</td>
-                </tr>
+                {cookings.map((cook, ind) => (
+                  <tr key={ind} className="text-[14px] bg-[#f8f8f8]">
+                    <th></th>
+                    <td>{cook.name}</td>
+                    <td>{cook.time} minutes</td>
+                    <td>{cook.Calories} Calories</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
